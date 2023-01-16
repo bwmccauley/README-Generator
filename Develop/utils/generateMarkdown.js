@@ -1,3 +1,4 @@
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -47,10 +48,38 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
-  ### ${renderLicenseLink(answer.license)}
+
+
+  ## Table of Contents:
+  ###  * [License](#license)
+  ###  *[Installation](#installation)
+  ###  *[Usage](#usage)
+  ###  *[Contributors](#contributors)
+  ###  *[Tests](#tests)
+  ###  *[Questions](#questions)
+
+  ## Installation:
+  ### You must install the following for this app to function:
+  ### 
+
+  ## Usage:
+  ### 
+
+  ## Contributors:
+  ### 
+
+  ## Tests:
+  ### Run the following commands in your terminal to test this app:
+  ### 
+
+  ## Questions:
+  ### If you have any questions, you may contact me at either
+  ### Github: https://github.com/
+  ### or
+  ### Email: 
 
 `;
 }
 
+// default export generateMarkdown
 module.exports = generateMarkdown;
